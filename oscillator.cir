@@ -1,0 +1,46 @@
+* RO3101A-1 433.92 MHz SAW Oscillator
+* Full Netlist - No Schematic Drawing Required
+
+* --- 1. Power Supply ---
+V1 VCC 0 5
+Cbypass VCC 0 1n  ; RF Bypass
+
+* --- 2. SAW Resonator Model (RO3101A-1) ---
+* [cite_start]Values from Datasheet: Rm=19.4, Lm=63.8u, Cm=2.11f, C0=2.4p [cite: 21]
+.SUBCKT RO3101A_1 1 2
+R1 1 3 19.4
+L1 3 4 63.8u
+C1 4 2 2.11f
+C2 1 2 2.4p
+.ENDS RO3101A_1
+
+* --- 3. The Oscillator Circuit ---
+* Transistor Q1 (RF NPN)
+* Connections: Collector, Base, Emitter
+Q1 Coll Base Emit 0 NPN_RF
+
+* [cite_start]Tuning Inductor (55nH matches test fixture) [cite: 21]
+L1 VCC Coll 55n
+
+* Feedback Network (Colpitts)
+C1 Base Emit 4.7p
+C2 Emit 0 5.6p
+
+* Biasing (DC Operation)
+Rb VCC Base 33k
+Re Emit 0 330
+
+* Connect the SAW Resonator (Base to Ground)
+X1 Base 0 RO3101A_1
+
+* --- 4. Simulation Commands ---
+* Define the Transistor Model (Generic RF NPN)
+.MODEL NPN_RF NPN(Is=1e-15 Bf=100 Cje=1p Cjc=1p Tf=0.1n)
+
+* Transient Analysis: 0 to 2 microseconds, step 0.1ns
+.TRAN 0 2u 0 0.1n
+
+* Initial Condition (Kickstart the oscillation)
+.IC V(Base)=0.7
+
+.END

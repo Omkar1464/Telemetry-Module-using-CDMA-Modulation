@@ -4586,7 +4586,7 @@
 	)
 	(symbol
 		(lib_id "ATMEGA328P:ATMEGA328P-MMHR")
-		(at 142.24 35.56 270)
+		(at 137.16 41.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4595,7 +4595,7 @@
 		(fields_autoplaced yes)
 		(uuid "167dd02c-4472-4f83-a4be-c6a62f34ed6a")
 		(property "Reference" "U4"
-			(at 162.56 33.6549 90)
+			(at 157.48 40.0049 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4604,7 +4604,7 @@
 			)
 		)
 		(property "Value" "ATMEGA328P-MMHR"
-			(at 162.56 36.1949 90)
+			(at 157.48 42.5449 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4613,7 +4613,7 @@
 			)
 		)
 		(property "Footprint" "28M1_ATM"
-			(at 142.24 35.56 0)
+			(at 137.16 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +4623,7 @@
 			)
 		)
 		(property "Datasheet" "ATMEGA328P-MMHR"
-			(at 142.24 35.56 0)
+			(at 137.16 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,7 +4633,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 35.56 0)
+			(at 137.16 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4949,7 +4949,7 @@
 	)
 	(symbol
 		(lib_id "Power Amplifier:RD01MUS2B")
-		(at 232.41 54.61 0)
+		(at 228.6 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4958,7 +4958,7 @@
 		(fields_autoplaced yes)
 		(uuid "26f0c4dd-a902-48dd-97d9-95647279589b")
 		(property "Reference" "Q1"
-			(at 243.84 53.3399 0)
+			(at 240.03 46.9899 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4967,7 +4967,7 @@
 			)
 		)
 		(property "Value" "RD01MUS2B"
-			(at 243.84 55.8799 0)
+			(at 240.03 49.5299 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4976,7 +4976,7 @@
 			)
 		)
 		(property "Footprint" "QNMOSFETG1S2D3_RD01MUS2B_MTS"
-			(at 232.41 54.61 0)
+			(at 228.6 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,7 +4986,7 @@
 			)
 		)
 		(property "Datasheet" "RD01MUS2B"
-			(at 232.41 54.61 0)
+			(at 228.6 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4996,7 +4996,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 54.61 0)
+			(at 228.6 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5999,7 +5999,7 @@
 	)
 	(symbol
 		(lib_id "MABA-007159-000000:MABA-007159-000000")
-		(at 127 144.78 0)
+		(at 132.08 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6008,7 +6008,7 @@
 		(fields_autoplaced yes)
 		(uuid "688a300d-6fb2-4c28-8715-8f7f2d780a52")
 		(property "Reference" "T1"
-			(at 127 134.62 0)
+			(at 132.08 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6016,7 +6016,7 @@
 			)
 		)
 		(property "Value" "MABA-007159-000000"
-			(at 127 137.16 0)
+			(at 132.08 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6024,7 +6024,7 @@
 			)
 		)
 		(property "Footprint" "MABA-007159-000000:XFMR_MABA-007159-000000"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6034,7 +6034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +6043,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6052,7 +6052,7 @@
 			)
 		)
 		(property "MF" "M/A-Com Technology"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6062,7 +6062,7 @@
 			)
 		)
 		(property "Description_1" "RF Balun 4.5MHz ~ 3GHz 1:1 6-SMD (5 Leads), Flat Lead"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6072,7 +6072,7 @@
 			)
 		)
 		(property "Package" "SMD-6 MA-COM"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6082,7 +6082,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6092,7 +6092,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/MABA-007159-000000/M%252FA-COM/view-part/?ref=eda"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6102,7 +6102,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6112,7 +6112,7 @@
 			)
 		)
 		(property "PARTREV" "v5"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6122,7 +6122,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MABA-007159-000000/M%252FA-COM/view-part/?ref=snap"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6132,7 +6132,7 @@
 			)
 		)
 		(property "MP" "MABA-007159-000000"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6142,7 +6142,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6152,7 +6152,7 @@
 			)
 		)
 		(property "MANUFACTURER" "M/A-Com Technology Solutions"
-			(at 127 144.78 0)
+			(at 132.08 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)

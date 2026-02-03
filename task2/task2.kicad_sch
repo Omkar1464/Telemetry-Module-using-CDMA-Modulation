@@ -2185,7 +2185,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "NEO-6M:NEO-6M"
+		(symbol "NEO-6M-GPS:NEO-6M-GPS"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2193,24 +2193,24 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 0 0)
+				(at -15.2439 26.0408 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "NEO-6M"
-				(at 0 0 0)
+			(property "Value" "NEO-6M-GPS"
+				(at -15.2445 -30.4874 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "NEO-6M:NEO-6M"
+			(property "Footprint" "NEO-6M-GPS:XCVR_NEO-6M-GPS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2238,7 +2238,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "U-blox"
+			(property "MF" "u-blox"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2248,7 +2248,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description_1" ""
+			(property "Description_1" "GPS Development Tools SparkFun GNSS-RTK Dead Reckoning Breakout - ZED-F9K (Qwiic)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2278,7 +2278,7 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/NEO-6M/u-blox/view-part/?ref=snap"
+			(property "Check_prices" "https://www.snapeda.com/parts/NEO-6M-GPS/u-blox/view-part/?ref=eda"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2288,7 +2288,7 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "NEO-6M"
+			(property "STANDARD" "Manufacturer Recommendations"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2298,7 +2298,7 @@
 					(hide yes)
 				)
 			)
-			(property "Availability" "In Stock"
+			(property "PARTREV" "R15"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2308,7 +2308,7 @@
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/NEO-6M/u-blox/view-part/?ref=eda"
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/NEO-6M-GPS/u-blox/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2318,10 +2318,40 @@
 					(hide yes)
 				)
 			)
-			(symbol "NEO-6M_0_0"
+			(property "MP" "NEO-6M-GPS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "U-Blox"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "NEO-6M-GPS_0_0"
 				(rectangle
-					(start 2.54 0)
-					(end 15.24 12.7)
+					(start -15.24 -27.94)
+					(end 15.24 25.4)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2330,26 +2360,17 @@
 						(type background)
 					)
 				)
-				(text "NEO-6M"
-					(at 12.7 1.778 900)
-					(effects
-						(font
-							(size 1.778 1.778)
-						)
-						(justify left)
-					)
-				)
-				(pin bidirectional line
-					(at 0 10.16 0)
-					(length 2.54)
-					(name "GND"
+				(pin input line
+					(at -20.32 12.7 0)
+					(length 5.08)
+					(name "EXTINT0"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "GND"
+					(number "4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2357,17 +2378,71 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 0 7.62 0)
-					(length 2.54)
-					(name "TX"
+				(pin input line
+					(at -20.32 7.62 0)
+					(length 5.08)
+					(name "RF_IN"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "TX"
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "SS_N"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "CFG_GPS0/SCK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "MISO/CFG_COM1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2376,16 +2451,16 @@
 					)
 				)
 				(pin bidirectional line
-					(at 0 5.08 0)
-					(length 2.54)
-					(name "RX"
+					(at -20.32 -5.08 0)
+					(length 5.08)
+					(name "MOSI/CFG_COM0"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "RX"
+					(number "14"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2394,8 +2469,44 @@
 					)
 				)
 				(pin bidirectional line
-					(at 0 2.54 0)
-					(length 2.54)
+					(at -20.32 -10.16 0)
+					(length 5.08)
+					(name "USB_DM"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -12.7 0)
+					(length 5.08)
+					(name "USB_DP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 22.86 180)
+					(length 5.08)
 					(name "VCC"
 						(effects
 							(font
@@ -2403,7 +2514,262 @@
 							)
 						)
 					)
-					(number "VCC"
+					(number "23"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 20.32 180)
+					(length 5.08)
+					(name "VDDUSB"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 17.78 180)
+					(length 5.08)
+					(name "V_BCKP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 12.7 180)
+					(length 5.08)
+					(name "RXD1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 10.16 180)
+					(length 5.08)
+					(name "TXD1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 5.08 180)
+					(length 5.08)
+					(name "TIMEPULSE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "VCC_RF"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional clock
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "SCL2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -5.08 180)
+					(length 5.08)
+					(name "SDA2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -17.78 180)
+					(length 5.08)
+					(name "RSVD_8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -20.32 180)
+					(length 5.08)
+					(name "RSVD_17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -25.4 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -25.4 180)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -25.4 180)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -25.4 180)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "24"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -3146,6 +3512,263 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Sensor_Temperature:PT1000"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TH"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PT1000"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.heraeus.com/media/media/group/doc_group/products_1/hst/sot_to/de_15/to_92_d.pdf"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PT1000 platinum temperature sensor (RTD)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "platinum temperature sensor RTD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?92* PIN?ARRAY* bornier* Terminal?Block* SOD70* R*1206* R*0805*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PT1000_0_1"
+				(arc
+					(start -3.175 2.413)
+					(mid -3.0506 2.3165)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.048 2.794)
+					(mid -2.9736 2.9736)
+					(end -2.794 3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 3.048)
+					(mid -2.6144 2.9736)
+					(end -2.54 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 2.54)
+					(mid -2.9736 2.6144)
+					(end -3.048 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 1.905)
+					(mid -2.9736 1.9794)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 2.159)
+					(mid -2.6144 1.9794)
+					(end -2.794 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.159 2.794)
+					(mid -2.434 2.5608)
+					(end -2.794 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.159) (xy -2.54 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.683) (xy -2.54 -1.397) (xy -2.794 -2.159) (xy -2.286 -2.159) (xy -2.54 -1.397) (xy -2.54 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy -1.778 1.524) (xy 1.778 -1.524) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.683) (xy -1.778 -1.397) (xy -2.032 -2.159) (xy -1.524 -2.159) (xy -1.778 -1.397)
+						(xy -1.778 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PT1000_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4620,6 +5243,248 @@
 		)
 	)
 	(symbol
+		(lib_id "NEO-6M-GPS:NEO-6M-GPS")
+		(at 127 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "065ff277-72d4-4274-b06c-c3960309b75e")
+		(property "Reference" "U3"
+			(at 127 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NEO-6M-GPS"
+			(at 127 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NEO-6M-GPS:XCVR_NEO-6M-GPS"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "u-blox"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "GPS Development Tools SparkFun GNSS-RTK Dead Reckoning Breakout - ZED-F9K (Qwiic)"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/NEO-6M-GPS/u-blox/view-part/?ref=eda"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "R15"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NEO-6M-GPS/u-blox/view-part/?ref=snap"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "NEO-6M-GPS"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "U-Blox"
+			(at 127 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "487268b7-77d4-43b2-94d4-5ada05cf9378")
+		)
+		(pin "17"
+			(uuid "6c25903a-8afc-45a3-bbc5-f7fe960ac313")
+		)
+		(pin "12"
+			(uuid "4bd611af-efe4-47b5-80c9-41214183dd66")
+		)
+		(pin "23"
+			(uuid "01269e90-00e3-48fc-a132-478bd82b2d7c")
+		)
+		(pin "6"
+			(uuid "a6e6f47c-c3c4-4919-835f-196b1681296e")
+		)
+		(pin "14"
+			(uuid "4224c854-32e0-466d-a482-fda4e527c6b8")
+		)
+		(pin "9"
+			(uuid "ac987cef-a65f-411d-b0a3-73996b2d00ed")
+		)
+		(pin "19"
+			(uuid "112a9945-4d30-4222-86b7-a7a869b39e0f")
+		)
+		(pin "16"
+			(uuid "adacee6b-6e12-4b3b-903e-e078d645310f")
+		)
+		(pin "4"
+			(uuid "b99d8c53-c8f2-4f29-87fe-9fae4e01f8a9")
+		)
+		(pin "11"
+			(uuid "4a5d09a2-440b-491c-9062-e6d069fe4cad")
+		)
+		(pin "2"
+			(uuid "f25eae4d-c69b-4ee9-9cba-9dbd9d82baf2")
+		)
+		(pin "20"
+			(uuid "83e5e0c2-7682-4d25-b7cf-4aca0ca4fd56")
+		)
+		(pin "18"
+			(uuid "23681fc0-b1bc-4766-91a6-dae4a9cbcb42")
+		)
+		(pin "15"
+			(uuid "96cc0915-52be-4703-a0b0-f1be01c6a469")
+		)
+		(pin "5"
+			(uuid "9e0a4211-9e61-405b-89cc-27ed46cd12f9")
+		)
+		(pin "22"
+			(uuid "62b84c81-396b-4b65-b1f4-c9408237bec0")
+		)
+		(pin "21"
+			(uuid "6bd6d0f0-01d0-4aa2-8e73-4498642db4ef")
+		)
+		(pin "3"
+			(uuid "f3d92a29-a4c1-47bc-a871-cc47ec711dd7")
+		)
+		(pin "8"
+			(uuid "08c3391d-4777-4d10-9906-b2132bafcef4")
+		)
+		(pin "10"
+			(uuid "10f0b150-e041-42f3-afda-dd9de62a26e2")
+		)
+		(pin "13"
+			(uuid "2eccd479-5ed1-4bfb-94ac-5e08e2d6f76f")
+		)
+		(pin "24"
+			(uuid "cae58c04-1034-4215-a4cc-2e763fd8cf75")
+		)
+		(instances
+			(project ""
+				(path "/ec89ecfb-bb69-462e-870d-e1f0b11772c4"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 220.98 129.54 0)
 		(unit 1)
@@ -4759,7 +5624,7 @@
 	)
 	(symbol
 		(lib_id "ATMEGA328P:ATMEGA328P-MMHR")
-		(at 121.92 67.31 0)
+		(at 67.31 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4768,7 +5633,7 @@
 		(fields_autoplaced yes)
 		(uuid "167dd02c-4472-4f83-a4be-c6a62f34ed6a")
 		(property "Reference" "U4"
-			(at 121.285 43.18 0)
+			(at 66.675 39.37 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4776,7 +5641,7 @@
 			)
 		)
 		(property "Value" "ATMEGA328P-MMHR"
-			(at 121.285 45.72 0)
+			(at 66.675 41.91 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4784,7 +5649,7 @@
 			)
 		)
 		(property "Footprint" "28M1_ATM"
-			(at 121.92 67.31 0)
+			(at 67.31 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4794,7 +5659,7 @@
 			)
 		)
 		(property "Datasheet" "ATMEGA328P-MMHR"
-			(at 121.92 67.31 0)
+			(at 67.31 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,7 +5669,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 121.92 67.31 0)
+			(at 67.31 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5390,163 +6255,6 @@
 			(project ""
 				(path "/ec89ecfb-bb69-462e-870d-e1f0b11772c4"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "NEO-6M:NEO-6M")
-		(at 77.47 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33c20826-d6b7-4040-8e8d-8e81e4f38401")
-		(property "Reference" "U3"
-			(at 93.98 88.6383 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NEO-6M"
-			(at 93.98 91.1783 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "NEO-6M:NEO-6M"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "U-blox"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NEO-6M/u-blox/view-part/?ref=snap"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "NEO-6M"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/NEO-6M/u-blox/view-part/?ref=eda"
-			(at 77.47 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "VCC"
-			(uuid "44e88bc1-9f58-40dd-8a6b-3541b272ad03")
-		)
-		(pin "TX"
-			(uuid "767695ed-692b-4117-9cea-1fa6a81378fc")
-		)
-		(pin "RX"
-			(uuid "e1c9ce4f-02f4-4fe2-b55c-c05a787086e9")
-		)
-		(pin "GND"
-			(uuid "93bef7fc-3666-4d90-bd9e-6866eaad6c99")
-		)
-		(instances
-			(project ""
-				(path "/ec89ecfb-bb69-462e-870d-e1f0b11772c4"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -6375,7 +7083,7 @@
 	)
 	(symbol
 		(lib_id "MABA-007159-000000:MABA-007159-000000")
-		(at 137.16 170.18 0)
+		(at 186.69 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6384,7 +7092,7 @@
 		(fields_autoplaced yes)
 		(uuid "688a300d-6fb2-4c28-8715-8f7f2d780a52")
 		(property "Reference" "T1"
-			(at 137.16 160.02 0)
+			(at 186.69 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6392,7 +7100,7 @@
 			)
 		)
 		(property "Value" "MABA-007159-000000"
-			(at 137.16 162.56 0)
+			(at 186.69 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,7 +7108,7 @@
 			)
 		)
 		(property "Footprint" "MABA-007159-000000:XFMR_MABA-007159-000000"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6410,7 +7118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,7 +7127,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6428,7 +7136,7 @@
 			)
 		)
 		(property "MF" "M/A-Com Technology"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6438,7 +7146,7 @@
 			)
 		)
 		(property "Description_1" "RF Balun 4.5MHz ~ 3GHz 1:1 6-SMD (5 Leads), Flat Lead"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6448,7 +7156,7 @@
 			)
 		)
 		(property "Package" "SMD-6 MA-COM"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6458,7 +7166,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6468,7 +7176,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/MABA-007159-000000/M%252FA-COM/view-part/?ref=eda"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6478,7 +7186,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6488,7 +7196,7 @@
 			)
 		)
 		(property "PARTREV" "v5"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6498,7 +7206,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/MABA-007159-000000/M%252FA-COM/view-part/?ref=snap"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6508,7 +7216,7 @@
 			)
 		)
 		(property "MP" "MABA-007159-000000"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +7226,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6528,7 +7236,7 @@
 			)
 		)
 		(property "MANUFACTURER" "M/A-Com Technology Solutions"
-			(at 137.16 170.18 0)
+			(at 186.69 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7162,7 +7870,7 @@
 	)
 	(symbol
 		(lib_id "Sensor_Humidity:SHT4x")
-		(at 68.58 50.8 0)
+		(at 77.47 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7171,7 +7879,7 @@
 		(fields_autoplaced yes)
 		(uuid "791a47a0-97e7-4172-b3eb-ae1486bb5b25")
 		(property "Reference" "U2"
-			(at 74.93 49.5299 0)
+			(at 83.82 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7180,7 +7888,7 @@
 			)
 		)
 		(property "Value" "SHT4x"
-			(at 74.93 52.0699 0)
+			(at 83.82 27.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7189,7 +7897,7 @@
 			)
 		)
 		(property "Footprint" "Sensor_Humidity:Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad"
-			(at 72.39 57.15 0)
+			(at 81.28 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7199,7 +7907,7 @@
 			)
 		)
 		(property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf"
-			(at 72.39 59.69 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7209,7 +7917,7 @@
 			)
 		)
 		(property "Description" "Digital Humidity and Temperature Sensor, ±1%RH, ±0.1°C, I2C, 1.08-3.6V, 16bit, DFN-4"
-			(at 68.58 50.8 0)
+			(at 77.47 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8329,6 +9037,76 @@
 			(project "task2"
 				(path "/ec89ecfb-bb69-462e-870d-e1f0b11772c4"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:PT1000")
+		(at 55.88 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecdbaf76-c3fb-4f81-bce4-1a2487ae0607")
+		(property "Reference" "TH1"
+			(at 58.42 29.5274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PT1000"
+			(at 58.42 32.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.heraeus.com/media/media/group/doc_group/products_1/hst/sot_to/de_15/to_92_d.pdf"
+			(at 55.88 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PT1000 platinum temperature sensor (RTD)"
+			(at 55.88 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecd102fb-c35a-4c1f-a40b-c95032e28e30")
+		)
+		(pin "2"
+			(uuid "55f2781d-37d3-404f-a629-d90f82755d64")
+		)
+		(instances
+			(project ""
+				(path "/ec89ecfb-bb69-462e-870d-e1f0b11772c4"
+					(reference "TH1")
 					(unit 1)
 				)
 			)

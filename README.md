@@ -138,7 +138,7 @@ $$f_{\text{DSO}} = \frac{f_c}{2} = 50.0\text{ kHz}$$
 
 ## 👥 Authors & Academic Affiliation
 
-* **Moksha Parikh** (`U23EC001`)  
+* **Moksha Parikh** (`U23EC001`) -- [GitHub Profile](https://github.com/mokshaparikh11)   
 * **Ridham Chaudhary** (`U23EC030`) — [GitHub Profile](https://github.com/chaudharyridham)  
 * **Omkar Sinh** (`U23EC048`) — [GitHub Profile](https://github.com/Omkar1464)  
 

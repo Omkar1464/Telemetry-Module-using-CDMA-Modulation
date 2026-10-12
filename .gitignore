@@ -1,0 +1,27 @@
+# Compiled binaries / temporary build outputs
+*.hex
+*.elf
+*.o
+*.obj
+
+# KiCad temporary & autosave backup files
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.lck
+
+# Multisim & SPICE temporary/backup files
+*Security copy*
+*.bak
+*.tmp
+*.log
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / Editor folders
+.vscode/
+.idea/
